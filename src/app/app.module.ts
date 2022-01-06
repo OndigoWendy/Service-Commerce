@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { BsDropdownModule} from 'ngx-bootstrap/dropdown';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { BsDropdownModule} from 'ngx-bootstrap/dropdown';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    BsDropdownModule
+    BsDropdownModule,
+    MDBBootstrapModule
   ],
   providers: [],
   bootstrap: [AppComponent]

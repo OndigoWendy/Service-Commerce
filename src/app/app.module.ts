@@ -5,7 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { BsDropdownModule} from 'ngx-bootstrap/dropdown';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
+
 
 @NgModule({
   declarations: [
@@ -16,9 +17,10 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     AppRoutingModule,
     NgbModule,
     BsDropdownModule.forRoot(),
-    MDBBootstrapModule.forRoot()
+
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule{}

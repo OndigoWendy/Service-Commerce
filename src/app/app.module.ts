@@ -4,22 +4,38 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import { BsDropdownModule} from 'ngx-bootstrap/dropdown';
+import { RoutingModule } from './routing/routing.module';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { CommonModule } from '@angular/common';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { HeaderComponent } from './navigation/header/header.component';
 
-
+ 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CommonModule,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
-    BsDropdownModule.forRoot(),
-
     
+    CommonModule,
+    MatSidenavModule,
+    MatTabsModule,
+    RoutingModule,
+    MatToolbarModule,
+
   ],
+  exports: [
+    MatTabsModule,
+    MatSidenavModule,
+      MatToolbarModule,
+  ],
+
+
   providers: [],
   bootstrap: [AppComponent]
 })

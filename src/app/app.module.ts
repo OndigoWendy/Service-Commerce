@@ -17,7 +17,6 @@ import { HeaderComponent } from './navigation/header/header.component';
 @NgModule({
   declarations: [
     AppComponent,
-    CommonModule,
     HeaderComponent
   ],
   imports: [
@@ -35,6 +34,7 @@ import { HeaderComponent } from './navigation/header/header.component';
     MatTabsModule,
     MatSidenavModule,
       MatToolbarModule,
+      CommonModule
   ],
 
 
@@ -42,3 +42,4 @@ import { HeaderComponent } from './navigation/header/header.component';
   bootstrap: [AppComponent]
 })
 export class AppModule{}
+

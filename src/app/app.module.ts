@@ -10,6 +10,8 @@ import { CommonModule } from '@angular/common';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatTabsModule} from '@angular/material/tabs';
 import { HeaderComponent } from './navigation/header/header.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 
  
@@ -17,7 +19,8 @@ import { HeaderComponent } from './navigation/header/header.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+ 
   ],
   imports: [
     BrowserModule,
@@ -28,13 +31,19 @@ import { HeaderComponent } from './navigation/header/header.component';
     MatTabsModule,
     RoutingModule,
     MatToolbarModule,
+    MatIconModule,
+    MatButtonModule
+
 
   ],
   exports: [
     MatTabsModule,
     MatSidenavModule,
       MatToolbarModule,
-      CommonModule
+      CommonModule,
+      MatIconModule,
+      MatButtonModule
+     
   ],
 
 

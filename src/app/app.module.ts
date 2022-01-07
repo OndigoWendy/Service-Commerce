@@ -8,7 +8,9 @@ import { RoutingModule } from './routing/routing.module';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { CommonModule } from '@angular/common';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatTabsModule} from '@angular/material/tabs';
 import { HeaderComponent } from './navigation/header/header.component';
+
 
  
 

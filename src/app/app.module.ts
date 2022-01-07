@@ -12,6 +12,8 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { HeaderComponent } from './navigation/header/header.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { HomeComponent } from './home/home.component';
+
 
 
  
@@ -20,6 +22,8 @@ import { MatButtonModule } from '@angular/material/button';
   declarations: [
     AppComponent,
     HeaderComponent,
+    HomeComponent,
+
  
   ],
   imports: [
